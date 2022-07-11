@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --lightcyan : hsl(193, 38%, 86%);
+    --neongreen : hsl(150, 100%, 66%);
+    --grayishblue : hsl(217, 19%, 38%);
+    --darkgrayishblue : hsl(217, 19%, 24%);
+    --darkblue : hsl(218, 23%, 16%);
+}
+html {
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+}
+
+main {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--darkblue);
+}
+main .card-content {
+   margin:  0 auto;
+   width: 90%;
+   min-width: 296px;
+   max-width: 500px;
+   height: 320px;
+   background-color: var(--darkgrayishblue);
+   border-radius: 5px;
+   text-align: center;
+   padding: 20px;
+   position: relative;
+   
+}
+main .card-content .advice {
+    color: var(--neongreen);
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+main .card-content .text {
+    color: var(--grayishblue);
+    font-size: 20px;
+    color: var(--lightcyan);
+}
+main .card-content .img-line {
+    margin-top: 30px;
+    width: 90%;
+}
+
+main .card-content .circle {
+    background-color: aqua;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    top: 50%;
+    margin-top: 130px;
+    left: calc(50% - 26px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+main .card-content .circle:hover {
+    box-shadow: 0px 0px 60px 11px var(--neongreen);
+    cursor: pointer;
+}
